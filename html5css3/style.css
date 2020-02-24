@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.main-header {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #445161;
+  color: #fff;
+  font-family: Arial;
+}
+
+.main-header:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.main-header-wrp {
+  width: 458px;
+  float: left;
+/*   border: 1px solid white;
+   */}
+
+.main-header-title {
+  margin: 0 0 10px 0;
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.main-header-list {
+  padding: 0 0 0 30px;
+  margin: 0 0 0 0;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.main-header-list-item {
+  list-style-type: none;
+  position: relative;
+}
+
+.main-header-list-item:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url('img/mcheck12.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+/*   border: 1px solid #fff;
+   */  position: absolute;
+  top: 10px;
+  left: -27px;
+}
+
+.main-header-img {
+  display: block;
+  width: 469px;
+  min-height: 214px;
+  float: right;
+  background-color: #fff;
+}
+
+.content {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: Arial;
+}
+
+.about-product {
+  content: "";
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  clear: both;
+}
+
+.about-product-text {
+  float: left;
+  width: 660px;
+  height: 245px;
+}
+
+video {
+  display: block;
+  width: 430px;
+  min-height: 245px;
+  float: right;
+  background-color: #445161;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 0;
+  color: #445161;
+  text-align: center;
+}
+
+#first-h2 {
+  text-align: left;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.dignity {
+  content: "";
+  display: block;
+  width: 100%;
+  min-height: 350px;
+  margin-top: 30px;
+  clear: both;
+}
+
+.dignity-pluses li {
+  display: block;
+  width: 47%;
+  float: left;
+  padding: 10px 34px 10px 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.dignity-pluses-item {
+  list-style-type: none;
+  position: relative;
+}
+  
+.dignity-pluses-item:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url('img/plus.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+/*   border: 1px solid #fff;
+   */  position: absolute;
+  top: 15px;
+  left: -35px;
+}
