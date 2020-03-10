@@ -1,0 +1,359 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway/Raleway-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway/Raleway-Bold.ttf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+.container {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.main-header {
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url(img/bg_photo_11949.png);
+  color: #fff;
+}
+
+.main-header:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.main-header-wrp {
+  padding-top: 40px;
+  padding-left: 370px;
+  padding-right: 370px;
+  min-height: 60px;
+}
+
+.main-header-menu {
+  display: flex;
+  float: right;
+}
+
+.logo-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 185px;
+  text-decoration: none;
+  color: #fff;
+  float: left;
+}
+
+.logo-link:hover .logo-icon {
+  fill: #c7b299;
+}
+
+.logo-link:hover .logo-txt {
+  color: #c7b299;
+}
+
+.logo-link:active .logo-icon {
+  fill: green;
+}
+
+.logo-link:active .logo-txt {
+  color: green;
+}
+
+.logo-icon {
+  fill: CurrentColor;
+}
+
+.logo-txt {
+  font-family: 'Raleway', sans-serif;
+  font-size: 34px;
+}
+
+.main-header-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.main-header-list-item {
+  margin: 0 30px 0 0;
+}
+
+.main-header-list-url {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.main-header-list-url:hover {
+  color: #c7b299;
+}
+
+.main-header-menu-bskt {
+  background: url(img/icon_cart_12273.png) 50% 50% no-repeat;
+  background-size: contain;
+  border: none;
+  width: 25px;
+  height: 25px;
+  margin: 10px 30px 0 0;
+}
+
+.main-header-menu-bskt:hover {
+  cursor: pointer;
+}
+
+.main-header-menu-bskt:focus {
+  color: #c7b299;
+  outline: none;
+}
+
+input[type="search"] {
+  width: 25px;
+  height: 25px;
+  outline: none;
+  background: url(img/icon_search_12272.png) no-repeat;
+  background-size: contain; 
+  border: none; 
+  margin-top: 10px;
+}
+
+input[type="search"]:focus {
+  width: 200px;
+  transition: width 1s ease-out;
+  background-position: right;
+  background-color: grey;
+}
+
+.carusel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1920px;
+  min-height: 400px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+
+.slider-arrow-1 {
+  display: block;
+  width: 40px;
+  height: 73px;
+  position: relative;
+}
+
+.slider-arrow-1:after {
+  content: "";
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border-top: 2px solid #d3c1ad;
+  border-right: 2px solid #d3c1ad;
+  transform: rotate(225deg);
+  position: absolute;
+  top: -50px;
+  left: -425px;
+}
+
+.slider-arrow-1:hover:after {
+  border-top: 2px solid orange;
+  border-right: 2px solid orange;
+}
+
+.carusel-txt {
+  width: 33%;
+  min-height: 350px;
+}
+
+.carusel-txt-1 {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+
+.carusel-txt-2 {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+}
+
+.carusel-txt-3 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.carusel-txt-btn {
+  width: 170px;
+  height: 53px;
+  background-color: #998675;
+  border-radius: 3.0px;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  outline: none;
+  margin: 50px 0 0 225px;
+}
+
+.carusel-txt-btn:hover {
+  background-color: #fff;
+  color: #998675;
+  cursor: pointer;
+}
+
+.carusel-txt-btn:active {
+  background-color: #998675;
+  color: #fff;
+  cursor: pointer;
+}
+
+.slider-arrow-2 {
+  display: block;
+  width: 40px;
+  height: 73px;
+  position: relative;
+}
+
+.slider-arrow-2:after {
+  content: "";
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border-top: 2px solid #d3c1ad;
+  border-right: 2px solid #d3c1ad;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -50px;
+  left: 425px;
+}
+
+.slider-arrow-2:hover:after {
+  border-top: 2px solid orange;
+  border-right: 2px solid orange;
+}
+
+.carusel-pagination {
+  width: 150px;
+  
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 840px;
+}
+
+.carusel-pagination-item {
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  opacity: 0.5;
+}
+
+.carusel-pagination-item:hover {
+  background-color: transparent;
+  border: 2px solid #d3c1ad;
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.main-block-2 {
+  padding-top: 80px;
+  padding-left: 350px;
+}
+
+.web {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 300px;
+  height: 204px;
+  padding: 10px 10px 0 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #555555;
+  background-color: #fff;
+  float: left;
+}
+
+.web:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #f1eee9;
+}
+
+.web:hover .web-icon {
+  fill: #c7b299;
+}
+
+.web:hover .web-title {
+  color: #c7b299;
+}
+
+.web:hover:after {
+ background-color: #c7b299;
+}
+
+.web-icon {
+  fill: #555555;
+  margin: 0 0 15px 0;
+}
+
+.web-title {
+  margin: 0 0 10px 0;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+}
+
+.web-txt {
+  margin: 0 0 15px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
